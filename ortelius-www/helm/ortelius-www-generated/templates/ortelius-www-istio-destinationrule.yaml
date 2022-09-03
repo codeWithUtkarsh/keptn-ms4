@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  creationTimestamp: null
+  name: ortelius-www
+spec:
+  host: ortelius-www.ms4-dev.svc.cluster.local
