@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  creationTimestamp: null
+  name: ortelius-www-canary
+spec:
+  host: ortelius-www-canary.ms4-production.svc.cluster.local

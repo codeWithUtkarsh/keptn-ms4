@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ortelius-www-primary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ortelius-www-primary
+      tier: backend
+      track: stable
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ortelius-www-primary
+        tier: backend
+        track: stable
+    spec:
+      containers:
+      - image: quay.io/ortelius/website:main-v9.0.0.334-gcd73761
+        imagePullPolicy: Always
+        name: ortelius-www
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
