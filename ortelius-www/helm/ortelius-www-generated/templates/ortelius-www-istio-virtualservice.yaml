@@ -14,6 +14,6 @@ spec:
   - route:
     - destination:
         host: ortelius-www-canary.ms4-production.svc.cluster.local
-      weight: 100
     - destination:
         host: ortelius-www-primary.ms4-production.svc.cluster.local
+      weight: 100
